@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom';
+import AuthLayout from '@/components/AuthLayout';
+export default function Login(){return <AuthLayout title="Welcome back" subtitle="Sign in to your OliTechs account."><form className="auth-form" onSubmit={e=>e.preventDefault()}><label>Email<input required type="email" placeholder="you@example.com"/></label><label>Password<input required type="password" placeholder="••••••••"/></label><button className="btn btn-primary">Sign In</button><Link to="/forgot-password">Forgot password?</Link><small>New to OliTechs? <Link to="/register">Create an account</Link></small></form></AuthLayout>}
