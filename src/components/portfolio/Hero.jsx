@@ -1,0 +1,8 @@
+import { ArrowRight, Download } from 'lucide-react';
+import Reveal from './Reveal';
+import useMouseParallax from '@/hooks/useMouseParallax';
+
+export default function Hero(){
+ const ref=useMouseParallax();
+ return <section id="home" ref={ref} className="hero"><div className="hero-grid"/><div className="hero-orb parallax-bg"/><div className="hero-dots">••••••<br/>••••••<br/>••••••</div><div className="container hero-inner"><div className="hero-copy"><Reveal><span className="eyebrow">FULL-STACK DEVELOPER</span></Reveal><Reveal delay={70}><h1>Building Scalable<br/><span>Digital Solutions</span><br/>That Drive <em>Results</em></h1></Reveal><Reveal delay={140}><p>I craft high-performance web applications with modern technologies and clean code. From idea to deployment, I build digital solutions that make an impact.</p></Reveal><Reveal delay={210}><div className="hero-actions"><a className="btn btn-primary" href="#projects">View My Work <ArrowRight size={17}/></a><a className="btn btn-ghost" href="/Shadrack-CV.pdf" download>Download CV <Download size={15}/></a></div></Reveal><Reveal delay={280}><div className="hero-stats"><div><b>4+</b><span>Years Experience</span></div><div><b>25+</b><span>Projects Completed</span></div><div><b>15+</b><span>Happy Clients</span></div><div><b>100%</b><span>Commitment</span></div></div></Reveal></div><div className="hero-visual"><div className="hero-code parallax-mid">&lt;/&gt;</div><div className="hero-photo parallax-front"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1000&q=88" alt="Professional developer portrait"/></div><div className="hero-badge">✦ Engineering with purpose</div></div></div></section>;
+}
