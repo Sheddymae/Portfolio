@@ -1,0 +1,2 @@
+import { useEffect, useState } from 'react';
+export default function useSize(){const[get,setGet]=useState({width:typeof window==='undefined'?0:window.innerWidth,height:typeof window==='undefined'?0:window.innerHeight});useEffect(()=>{const onResize=()=>setGet({width:window.innerWidth,height:window.innerHeight});window.addEventListener('resize',onResize);return()=>window.removeEventListener('resize',onResize)},[]);return get}
