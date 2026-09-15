@@ -1,0 +1,4 @@
+/* Runtime-safe presentation overrides. These prevent animation systems from ever hiding the portfolio. */
+.reveal-safe { opacity: 1 !important; transform: none !important; }
+html, body, #root { min-height: 100%; }
+body { background: #070710; }
