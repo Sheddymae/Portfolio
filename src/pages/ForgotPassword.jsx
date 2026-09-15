@@ -1,0 +1,2 @@
+import AuthLayout from '@/components/AuthLayout';
+export default function ForgotPassword(){return <AuthLayout title="Reset your password" subtitle="Enter your email and follow the reset instructions."><form className="auth-form" onSubmit={e=>e.preventDefault()}><label>Email<input required type="email" placeholder="you@example.com"/></label><button className="btn btn-primary">Send Reset Link</button></form></AuthLayout>}
