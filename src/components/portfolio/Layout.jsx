@@ -1,3 +1,4 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
-export default function Layout({children}){return <><Navbar/><main>{children}</main><Footer/></>}
+import ScrollToTop from '@/components/ScrollToTop';
+export default function Layout({children}){return <><ScrollToTop/><Navbar/><main>{children}</main><Footer/></>}
