@@ -1,0 +1,2 @@
+import AuthLayout from '@/components/AuthLayout';
+export default function ResetPassword(){return <AuthLayout title="Choose a new password" subtitle="Set a new secure password for your account."><form className="auth-form" onSubmit={e=>e.preventDefault()}><label>New password<input required type="password"/></label><label>Confirm password<input required type="password"/></label><button className="btn btn-primary">Update Password</button></form></AuthLayout>}
